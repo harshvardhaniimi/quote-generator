@@ -3,6 +3,6 @@ The aim is to generate quotes from various repositories. I will start with Wikiq
 
 I used SelectorGadget and rvest to scrap quotes from Wikipedia page. SelectorGadget made the task quite easy. Currently the code is capable to generate a random quote from the collection and show you quote(s) which contain any phrase. This means you can find quotes that were said by Mark Twain, as well as those quotes which have the word "knowledge" in it. Quite helpful.
 
-Finally, the aim is to make a Shiny app for this so that I can just "refresh" a page to get a quote whenever I want. 
+Finally, the aim is to make a Shiny app for this so that I can just "refresh" a page to get a quote whenever I want. I've no idea how Shiny app functions, so I will have to learn that first.
 
 This service is better than, say, Google Assistant's quote because I find that very biased. It tends to show me quote related to some topic over and over. Wikiquotes, IMDb and Goodreads are powered by community and actual people rather than some AI. So, it will hopefully give me some "new" quotes that Google Assistant ignores.
