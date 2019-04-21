@@ -16,7 +16,7 @@ server = function (input,output)
   
   quote=rbind(quote1,quote2)
   
-  rand = ceiling(runif(1)*5880)
+  rand = ceiling(runif(1)*length(quote))
   
   ##output quotes
   output$header = renderUI(HTML("<p><img style='display: block; margin-left: auto; 
