@@ -6,6 +6,6 @@ I used SelectorGadget and rvest to scrap quotes from Wikipedia page. SelectorGad
 ~~Finally, the aim is to make a Shiny app for this so that I can just "refresh" a page to get a quote whenever I want. I've no idea how Shiny app functions, so I will have to learn that first.~~
 
 Finally, there is a shiny app for it that you can use to get the code. Just reload the page to get a new code. Hope you like it. This is the first time I am using Shiny. Link to app: https://harshvardhan.shinyapps.io/quotes_generator/.
-You can launch it in your R environment using the code: `runGitHub( "", "<your user name>")`
+You can launch it in your R environment using the code: `runGitHub( "quote-generator", "harshvardhaniimi")`.
 
 This service is better than, say, Google Assistant's quote because I find that very biased. It tends to show me quote related to some topic over and over. Wikiquotes, IMDb and Goodreads are powered by community and actual people rather than some AI. So, it will hopefully give me some "new" quotes that Google Assistant ignores.
