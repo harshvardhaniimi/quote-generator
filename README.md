@@ -9,3 +9,7 @@ Finally, there is a shiny app for it that you can use to get the code. Just relo
 You can launch it in your R environment using the code: `runGitHub( "quote-generator", "harshvardhaniimi")`.
 
 This service is better than, say, Google Assistant's quote because I find that very biased. It tends to show me quote related to some topic over and over. Wikiquotes, IMDb and Goodreads are powered by community and actual people rather than some AI. So, it will hopefully give me some "new" quotes that Google Assistant ignores.
+
+
+Known issues: 
+- Texts like "Log In" crop up sometimes. I will fix this later.
