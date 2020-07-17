@@ -3,7 +3,7 @@ library("shinyWidgets")
 
 ui = fluidPage(htmlOutput("header"),htmlOutput("quote"),
                htmlOutput("ref"),
-               setBackgroundImage(src = "https://source.unsplash.com/random"))
+               setBackgroundImage(src = "https://source.unsplash.com/featured/?nature?white"))
 
 server = function (input,output)
 {
@@ -30,8 +30,8 @@ server = function (input,output)
   
   ##output quote
   output$quote = renderUI({
-    HTML(paste0("<br><br><br><br>","<p style='text-align: center;'>","<span style='font-family:times; 
-                font-size: 22pt;'>","<mark>",quote[rand],"</mark>","</p>"))
+    HTML(paste0("<br><br><br><br>","<p style='text-align:center; background-color:white;'>","<span style='font-family:times; 
+                font-size: 22pt;'>",quote[rand],"</p>"))
   })
   
   txt1 = paste0("<p>","<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>",
