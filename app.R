@@ -1,6 +1,9 @@
 library("shiny")
+library("shinyWidgets")
 
-ui = fluidPage(htmlOutput("header"),htmlOutput("quote"),htmlOutput("ref"))
+ui = fluidPage(htmlOutput("header"),htmlOutput("quote"),
+               htmlOutput("ref"),
+               setBackgroundImage(src = "https://source.unsplash.com/random"))
 
 server = function (input,output)
 {
@@ -22,7 +25,7 @@ server = function (input,output)
   output$header = renderUI(HTML("<p><img style='display: block; margin-left: auto; 
                                 margin-right: auto;' 
                                 src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Wikiquote-logo-en.svg/220px-Wikiquote-logo-en.svg.png' 
-                                alt='Wikiquote_Logo' width='220' height='220' />
+                                alt='Wikiquote_Logo' width='130' height='130' />
                                 </p>"))
   
   ##output quote
@@ -31,14 +34,14 @@ server = function (input,output)
                 font-size: 22pt;'>","<mark>",quote[rand],"</mark>","</p>"))
   })
   
-  txt1 = paste0("<p>","Pull refresh to load another quote.")
-  txt2 = paste0("<i>Designed and produced by Harshvardhan. The quotes' list is updated daily with 
-                Wikiquotes 'Quote of the Day'. This project is not supported or sponsored 
-                by Wikiquotes.:P")
+  txt1 = paste0("<p>","<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>",
+  "<p style='text-align: center;'>","<span style='font-family:times; font-size: 12pt;'>",
+  "<a href='https://www.harsh17.in'>","By Harshvardhan </a>","</p>")
 
+  
   ##output other stuff
   output$ref = renderUI({
-    HTML(paste(txt1,txt2,sep = "<br><br><br>"))
+    HTML(txt1)
   })
 }
 
