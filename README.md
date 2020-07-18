@@ -1,7 +1,7 @@
 # quote-generator
-The aim is to generate quotes from various repositories. I will start with Wikiquotes "Quote of the day" which can be found on: https://en.wikiquote.org/wiki/Wikiquote:Quote_of_the_Day. I will add IMDb and Goodreads after that. 
+The aim is to make a quotes generator website which we take with our breakfast. Quotes are derived from Wikiquotes "Quote of the day", found on: https://en.wikiquote.org/wiki/Wikiquote:Quote_of_the_Day.
 
-I used SelectorGadget and rvest to scrap quotes from Wikipedia page. Then I used Unsplash API to get a random nature background image. Combining these two will give me a nice quotes page.
+I used SelectorGadget and rvest to scrap quotes from Wikipedia page. Then I used Unsplash API to get a random nature background image. Finally, I use Shiny to combine all of these and make a webapp out of it.
 
 Link to app: https://harshvardhan.shinyapps.io/quotes_generator/.
 
